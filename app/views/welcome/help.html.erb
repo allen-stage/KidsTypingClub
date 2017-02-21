@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Help Page</title>
+
+</head>
+<body> 
+
+<h1>Help Center</h1>
+
+<%= "Message from controller :
+#{@controller_message}" %>
+
+<% #if in same controller, you can omit controller line %>
+<%= link_to("Go to Index",
+  {:controller => 'welcome',
+     :action => 'index'
+  }) %>
+
+<%= link_to("Go to Contact",
+  {:controller => 'welcome',
+     :action => 'contact'
+  }) %>
+
+</body>
+</html>
+

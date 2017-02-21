@@ -5,3 +5,22 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+Lesson.create!([{
+  lesson: 'Lesson 1', 
+  description: 'Learn F, J and Space keys'
+},
+{
+  lesson: 'Lesson 2', 
+  description: 'Learn U, R and K keys'
+},
+{
+  lesson: 'Lesson 3', 
+  description: 'Learn D, E and I keys'
+},
+{
+  lesson: 'Lesson 4', 
+  description: 'Learn C, G and N keys'
+}])

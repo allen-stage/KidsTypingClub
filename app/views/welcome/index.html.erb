@@ -1,2 +1,42 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+
+</head>
+<body>
+
+<h1>Kids Typing Club</h1>
+
+<% 11.times do |i| %>
+  <%= i %>
+<% end %>
+
+
+<%= link_to("Go to Contact",
+  {:controller => 'welcome',
+     :action => 'contact'
+  }) %>
+  
+<%= link_to("Go to Help",
+  {:controller => 'welcome',
+     :action => 'help'
+  }) %>
+
+<br><br><br>
+
+<%=
+#will test lessons controller/db here
+%>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
