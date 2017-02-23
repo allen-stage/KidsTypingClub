@@ -1,33 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
   <title>Index</title>
+
 
 </head>
 <body>
 
-<h1>Kids Typing Club</h1>
 
-<% 11.times do |i| %>
-  <%= i %>
-<% end %>
-
-
-<%= link_to("Go to Contact",
-  {:controller => 'welcome',
-     :action => 'contact'
-  }) %>
+<div class="container-fluid">
+<div class="nav-side-menu">
+    <div class="brand">Kids Typing Club</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
-<%= link_to("Go to Help",
-  {:controller => 'welcome',
-     :action => 'help'
-  }) %>
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a href="#">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  </a>
+                </li>
 
-<br><br><br>
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <i class="fa fa-gift fa-lg"></i>
+                    <%= link_to("Contact",
+                      {:controller => 'welcome',
+                         :action => 'contact'
+                      }) %>                  
+                  <span class="arrow"></span>
+                </li>
+                
+                
+                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-gift fa-lg"></i> Help <span class="arrow"></span></a>
+                </li>
+                
 
-<%=
-#will test lessons controller/db here
-%>
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#"><i class="fa fa-globe fa-lg"></i> Lessons <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li>Lesson 1</li>
+                  <li>Lesson 2</li>
+                  <li>Lesson 3</li>
+                </ul>
+
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>
+
+</div> <!-- close container fluid -->
+
+
+<div class="main">
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8"
+      <h1>Kids Typing Club</h1>
+      <p> test printttttttttttttttttttttttttttttttttttttttt</p>
+  </div>
+</div> <!-- close container -->
 
 
 
@@ -36,6 +88,10 @@
 
 
 
+
+
+
+</div> <!-- end main div -->
 
 </body>
 </html>

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :lessons
   #get 'welcome/index'
   match ':controller(/:action(/:id))', :via => :get
 
