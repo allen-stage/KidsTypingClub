@@ -3,6 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/* This block is separating sidebar from "main" text */
+@media only screen and (min-width : 320px) {
+  .main {
+    padding-left: 400px; // just an example
+  }
+}
+
+@media only screen and (min-width : 480px) {
+  .main {
+    padding-left: 400px; // just an example
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  .main {
+    padding-left: 400px; // just an example
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  .main {
+    padding-left: 400px; // just an example
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .main {
+    padding-left: 400px; // just an example
+  }
+}
+/* Above block is separating sidebar from "main" text */
+
+
 
 
 
@@ -15,6 +48,7 @@
   font-family: verdana;
   font-size: 12px;
   font-weight: 200;
+  /*default background color #2e35d; */
   background-color: #2e353d;
   position: fixed;
   top: 0px;
@@ -39,7 +73,7 @@
   margin: 0px;
   line-height: 35px;
   cursor: pointer;
-  /*    
+  /*   
     .collapsed{
        .arrow:before{
                  font-family: FontAwesome;
@@ -156,15 +190,3 @@ body {
   padding: 0px;
 }
 /* ABOVE HERE IS ALL NAVBAR CSS */
-
-
-
-
-html, body {
-  height: 100%;
-}
-
-body {
-  padding-top: 87px;
-  padding-bottom: 50px;
-}

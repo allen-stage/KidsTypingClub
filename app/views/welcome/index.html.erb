@@ -15,9 +15,9 @@
 
 <div class="container-fluid">
 <div class="nav-side-menu">
-    <div class="brand">Kids Typing Club</div>
+    <div class="brand"> Kids Typing Club</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-  
+
         <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
@@ -27,30 +27,23 @@
                   </a>
                 </li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <i class="fa fa-gift fa-lg"></i>
-                    <%= link_to("Contact",
-                      {:controller => 'welcome',
-                         :action => 'contact'
-                      }) %>                  
-                  <span class="arrow"></span>
-                </li>
                 
-                
-                <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> Help <span class="arrow"></span></a>
-                </li>
-                
-
 
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> Lessons <span class="arrow"></span></a>
+                  <a><i class="fa fa-globe fa-lg"></i>  
+                    <%= link_to("Lessons",
+                      {:controller => 'welcome',
+                        :action => 'lessons'
+                      }) %>                   
+                   <span class="arrow"></span></a>
                 </li>  
                 <ul class="sub-menu collapse" id="service">
                   <li>Lesson 1</li>
                   <li>Lesson 2</li>
                   <li>Lesson 3</li>
                 </ul>
+
+
 
 
                  <li>
@@ -64,27 +57,45 @@
                   <i class="fa fa-users fa-lg"></i> Users
                   </a>
                 </li>
+                
+                
+                
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a><i class="fa fa-envelope fa-lg"></i>
+                    <%= link_to("Contact",
+                      {:controller => 'welcome',
+                         :action => 'contact'
+                      }) %>                  
+                  </a>
+                </li>
+                
+                <li  data-toggle="collapse" data-target="#products" class="collapsed">
+                  <a><i class="fa fa-question-circle fa-lg"></i>
+                    <%= link_to("Help",
+                      {:controller => 'welcome',
+                         :action => 'help'
+                      }) %>                  
+                  </a>
+                </li>                
+                
+                
+                
             </ul>
      </div>
 </div>
 
-</div> <!-- close container fluid -->
 
 
 <div class="main">
 
-<div class="container-fluid">
   <div class="row">
-    <div class="col-md-8"
+    <div class="col-md-8">
       <h1>Kids Typing Club</h1>
-      <p> test printttttttttttttttttttttttttttttttttttttttt</p>
+      <p> test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p> test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
+
   </div>
-</div> <!-- close container -->
-
-
-
-
-
 
 
 
@@ -92,6 +103,11 @@
 
 
 </div> <!-- end main div -->
+
+
+
+</div> <!-- close container fluid -->
+
 
 </body>
 </html>
