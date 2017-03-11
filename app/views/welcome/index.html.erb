@@ -5,15 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <title>Index</title>
 
 
 </head>
 <body>
 
-
-<div class="container-fluid">
+<!--
+<div class="container-fluid col-md-2">
+<div class="row">
 <div class="nav-side-menu">
     <div class="brand"> Kids Typing Club</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
@@ -35,15 +36,9 @@
                       {:controller => 'welcome',
                         :action => 'lessons'
                       }) %>                   
-                   <span class="arrow"></span></a>
+                   </a>
                 </li>  
-                <ul class="sub-menu collapse" id="service">
-                  <li>Lesson 1</li>
-                  <li>Lesson 2</li>
-                  <li>Lesson 3</li>
-                </ul>
-
-
+                
 
 
                  <li>
@@ -82,20 +77,38 @@
                 
             </ul>
      </div>
-</div>
+  </div> 
+</div> <!-- close row -->
+</div> <!-- close container fluid -->
 
 
+
+
+
+
+<!--
+
+<div class="container-fluid">
+<div class="topbar">
+  <div class="titlebackground">
+    <p class="pagetitle"> Dashboard </p>
+  </div> 
+</div> <!-- end topbar -->
+
+
+
+
+<!--
 
 <div class="main">
-
   <div class="row">
-    <div class="col-md-8">
-      <h1>Kids Typing Club</h1>
-      <p> test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <p> test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test</p>
-
-  </div>
+    <div class="">
+      <br><br><br>
+      <div class=""> Beginner </div>
+      <div class=""> Intermediate </div>
+      <div class=""> Advanced </div>
+    </div> <!-- close md 8 -->
+  </div>  <!-- close row -->
 
 
 
@@ -107,6 +120,12 @@
 
 
 </div> <!-- close container fluid -->
+
+
+
+
+
+
 
 
 </body>
